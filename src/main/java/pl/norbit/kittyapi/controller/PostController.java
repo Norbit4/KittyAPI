@@ -9,7 +9,6 @@ import org.springframework.web.multipart.MultipartFile;
 import pl.norbit.kittyapi.CatObject;
 import pl.norbit.kittyapi.service.CatService;
 
-
 @RestController @AllArgsConstructor
 @RequestMapping(path = "api/cat")
 public class PostController {

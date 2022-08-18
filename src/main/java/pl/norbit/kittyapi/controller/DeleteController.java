@@ -12,14 +12,12 @@ import pl.norbit.kittyapi.service.CatService;
 @RestController @AllArgsConstructor
 @RequestMapping(path = "api/cat")
 public class DeleteController {
-
     private final CatService catService;
 
     @DeleteMapping(path = "delete/{filecode}")
     public ResponseEntity<?> deleteCat(@PathVariable("filecode")String fileCode){
-
         catService.removeCat(fileCode);
 
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok().body("OK");
     }
 }

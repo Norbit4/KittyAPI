@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-@RestController @AllArgsConstructor
+@RestController @AllArgsConstructor @CrossOrigin
 @RequestMapping(path = "api/cat")
 public class GetController {
 
