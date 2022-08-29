@@ -16,7 +16,7 @@ import java.util.UUID;
 
 @AllArgsConstructor @Service
 public class CatServiceImp implements CatService{
-    private final static String API_PATH = "http://localhost:8080/api/cat/getfile/";
+    private final static String API_PATH = "https://kittyapi.herokuapp.com/api/cat/getfile/";
     private final CatRepo catRepo;
 
     public List<CatObject> getAll(){
