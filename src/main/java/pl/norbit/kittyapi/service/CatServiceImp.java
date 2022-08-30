@@ -16,7 +16,7 @@ import java.util.UUID;
 
 @AllArgsConstructor @Service
 public class CatServiceImp implements CatService{
-    private final static String API_PATH = "https://kittyapi.herokuapp.com/api/cat/getfile/";
+    private final static String API_PATH = "https://kitty.fly.dev/api/cat/getfile/";
     private final CatRepo catRepo;
 
     public List<CatObject> getAll(){
@@ -62,6 +62,8 @@ public class CatServiceImp implements CatService{
 
         Random random = new Random();
         List<CatObject> all = catRepo.findAll();
+
+        if(all.isEmpty()) return null;
 
         int rInt = random.nextInt(all.size());
 
