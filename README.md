@@ -20,7 +20,7 @@ GET https://kitty.fly.dev/api/cat/random
 ``` 
 GET https://kitty.fly.dev/api/cat/getfile/[cat-uuid]
 ```
-**Add cat**
+**Post cat**
 ``` 
 POST https://kitty.fly.dev/api/cat/add
 ```
