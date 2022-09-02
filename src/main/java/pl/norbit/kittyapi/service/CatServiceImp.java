@@ -28,10 +28,12 @@ public class CatServiceImp implements CatService{
 
         UUID uuid = UUID.randomUUID();
 
-        String fileApiPath = API_PATH + uuid;
+        String stringUUID =  uuid.toString();
 
+        String fileApiPath = API_PATH + stringUUID;
+
+        cat.setId(stringUUID);
         cat.setImgLink(fileApiPath);
-        cat.setImgId(uuid.toString());
 
         FileUploadUtil.saveFile(uuid.toString(), multipartFile);
         catRepo.insert(cat);
@@ -45,16 +47,17 @@ public class CatServiceImp implements CatService{
         Optional<CatObject> byId = catRepo.findById(id);
 
         if(byId.isPresent()){
-            String imgID = byId.get().getImgId();
 
             try {
-                FileRemoveUtil.remove(imgID);
+                FileRemoveUtil.remove(id);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            catRepo.deleteById(id);
-        }
 
+            catRepo.deleteById(id);
+
+            return true;
+        }
         return false;
     }
 

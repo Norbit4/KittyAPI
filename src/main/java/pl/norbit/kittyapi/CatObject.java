@@ -15,5 +15,4 @@ public class CatObject {
     private String breed;
     private String description;
     private String imgLink;
-    private String imgId;
 }
