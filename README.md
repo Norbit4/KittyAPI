@@ -77,6 +77,16 @@ Sample response:
 POST https://kitty.fly.dev/api/cat/add
 ```
 
+Body:
+
+*form data*
+
+| KEY | VALUE_TYPE | 
+| :---:   | :---: | 
+| breed | Text |    
+| file | File | 
+| description | Text   | 
+
 Sample response:
 
 ``` json
