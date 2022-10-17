@@ -30,15 +30,13 @@ Sample response:
       "id": "630deaa6900398169482bf5c",
       "breed": "Persian",
       "description": null,
-      "imgLink": "https://kitty.fly.dev/api/cat/getfile/c7146b94-019f-4e35-8f92-8131132a3c77",
-      "imgId": "c7146b94-019f-4e35-8f92-8131132a3c77"
+      "imgLink": "https://kitty.fly.dev/api/cat/getfile/c7146b94-019f-4e35-8f92-8131132a3c77"
   },
   {
       "id": "630e0e26900398169482bf5d",
       "breed": "Scotitsh",
       "description": null,
-      "imgLink": "https://kitty.fly.dev/api/cat/getfile/48abe532-50fb-4965-9384-8bc9a75bfedc",
-      "imgId": "48abe532-50fb-4965-9384-8bc9a75bfedc"
+      "imgLink": "https://kitty.fly.dev/api/cat/getfile/48abe532-50fb-4965-9384-8bc9a75bfedc"
   }
 ]
 
@@ -56,8 +54,7 @@ Sample response:
     "id": "630e0e43900398169482bf5e",
     "breed": "Manx",
     "description": null,
-    "imgLink": "https://kitty.fly.dev/api/cat/getfile/6764bb54-7002-4423-9d0a-65045d64f330",
-    "imgId": "6764bb54-7002-4423-9d0a-65045d64f330"
+    "imgLink": "https://kitty.fly.dev/api/cat/getfile/6764bb54-7002-4423-9d0a-65045d64f330"
 }
 
 ``` 
@@ -94,8 +91,7 @@ Sample response:
     "id": "630e0e43900398169482bf5e",
     "breed": "Manx",
     "description": null,
-    "imgLink": "https://kitty.fly.dev/api/cat/getfile/6764bb54-7002-4423-9d0a-65045d64f330",
-    "imgId": "6764bb54-7002-4423-9d0a-65045d64f330"
+    "imgLink": "https://kitty.fly.dev/api/cat/getfile/6764bb54-7002-4423-9d0a-65045d64f330"
 }
 
 ``` 
