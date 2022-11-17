@@ -33,7 +33,7 @@ public class GetController {
     }
 
     @GetMapping(path = "downloadfile/{filecode}")
-    public ResponseEntity<?> downloadFile(@PathVariable("filecode")String fileCode){
+    public ResponseEntity<?> downloadFile(@PathVariable("filecode") String fileCode){
         Resource file;
 
         FileDownloadUtil downloadUtil = new FileDownloadUtil();
